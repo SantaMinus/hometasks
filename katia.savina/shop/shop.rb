@@ -7,9 +7,7 @@ class Shop
   end
 
   def add_items(*items)
-    items.each do |item|
-      @goods << item
-    end
+    @goods.push(*items)
   end
 
   def delete(name)
